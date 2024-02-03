@@ -1,14 +1,18 @@
 'use client'
-import { HeaderContainer } from "./styles";
+import { ButtonCreateTask, HeaderContainer, LogoSpace } from "./styles";
 
 export function Header(){
     return (
         <HeaderContainer>
             {/**Logo */}
-            {/**Tarefas pendentes */}
-            {/**Tarefas concluidas */}
+            <LogoSpace>
+            ToDo
+            </LogoSpace>
 
-            {/** */}
+            {/** Button create task */}
+            <ButtonCreateTask>
+                +
+            </ButtonCreateTask>
         </HeaderContainer>
     );
 }
