@@ -16,6 +16,11 @@ export const KanbanColumn = styled.div`
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
+  text-align: center;
+
+  h2{
+    margin: 30px;
+  }
 `;
 
 export const KanbanTask = styled.div`

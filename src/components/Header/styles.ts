@@ -30,7 +30,9 @@ export const ButtonCreateTask = styled.button`
     background: white;
     margin: auto 0;
     color: black;
-    font-size: 48px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
-    outline: none;
+    border: none; 
 `
