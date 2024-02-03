@@ -4,10 +4,10 @@ export const HeaderContainer = styled.div`
     display: flex;
     height: 25vh;
     width: 95%;
-    background: #666;
+    background: #E6E6E6;
     justify-content: space-between;
     padding: 50px;
-    box-shadow: 10px 5px 5px red;
+    box-shadow: 10px 5px 5px #BDBDBD;
 `
 
 export const LogoSpace = styled.div`
