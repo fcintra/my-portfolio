@@ -7,7 +7,7 @@ export const ModalContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const ModalContent = styled.div`
@@ -22,6 +22,7 @@ export const ModalContent = styled.div`
 
 export const ModalHeader = styled.div`
     display: flex;
+    border-radius: 10px 10px 0 0;
     justify-content: space-between;
     height: 75px;
     background-color: #D6D6D6;
@@ -40,6 +41,92 @@ export const ModalHeader = styled.div`
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        border: none; 
+        border: none;
+
+        &:hover{
+            transition: 0.5s;
+            background-color: black; /* Adapte a cor de fundo do hover conforme necessário */
+            color: #ffffff;
+        }
     }
 `;
+
+export const ModalInputsTitle = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 90%;
+
+    :nth-child(3n){
+        text-align: end;
+    }
+`;
+
+export const TaskTitle = styled.span`
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; 
+    margin-right: 10px;
+    margin-bottom: 20px;
+`
+
+export const TaskInput = styled.input`
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none;
+`;
+
+export const ModalInputDescription = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 90%;
+
+    :nth-child(3n){
+        text-align: end;
+    }
+`;
+
+
+export const TaskInputDescription = styled.textarea`
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none;
+    line-break: strict;
+`;
+
+
+
+export const ModalInputDate = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    height: 120px;
+    width: 100%;
+    color: black;
+`;
+
+export const ButtonSaveTask = styled.button`
+    height: 50px;
+    width: 60%;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none; 
+    margin: auto;
+
+    &:hover{
+        transition: 0.5s;
+        background-color: black; /* Adapte a cor de fundo do hover conforme necessário */
+        color: #ffffff;
+    }
+`;
+

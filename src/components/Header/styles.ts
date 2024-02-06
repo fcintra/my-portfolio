@@ -30,9 +30,15 @@ export const ButtonCreateTask = styled.button`
     background: white;
     margin: auto 0;
     color: black;
-    font-size: 50px;
+    font-size: 36px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: none; 
+    border: none;
+
+    &:hover{
+        transition: 0.5s;
+        background-color: black; /* Adapte a cor de fundo do hover conforme necessário */
+        color: #ffffff;
+    }
 `
