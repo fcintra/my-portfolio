@@ -1,6 +1,6 @@
+import { DatePicker } from "@mui/x-date-pickers";
 import { useState } from "react";
-import { DataInput } from "./Data";
-import { ButtonSaveTask, ModalContainer, ModalContent, ModalHeader, ModalInputDate, ModalInputDescription, ModalInputsTitle, TaskInput, TaskInputDescription, TaskTitle } from "./styles";
+import { ButtonSaveTask, ContainerInputs, ModalContainer, ModalContent, ModalHeader, ModalInputDate, ModalInputDescription, ModalInputsTitle, TaskInput, TaskInputDescription, TaskTitle } from "./styles";
 
 interface ModalProps{
     visible: boolean;
@@ -13,9 +13,10 @@ export function ModalNewTask({visible, onClose}: ModalProps){
 
     const [inputTitleValue, setInputTitleValue] = useState('');
     const [inputDescriptionValue, setInputDescriptionValue] = useState('');
-
+    const [inputDateValue, setInputDateValue] = useState()
 
     const handleInputTitleChange = (e: any) => {
+     
         const value = e.target.value;
         setInputTitleValue(value);
     };
@@ -23,6 +24,11 @@ export function ModalNewTask({visible, onClose}: ModalProps){
     const handleInputDescriptionChange = (e: any) => {
         const value = e.target.value;
         setInputDescriptionValue(value);
+    };
+
+    const handleInputDateChange= (date: any) => {
+        setInputDateValue(date);
+        console.log(inputDateValue)
     };
     
     return (
@@ -47,7 +53,10 @@ export function ModalNewTask({visible, onClose}: ModalProps){
                 </ModalInputDescription>
 
                 <ModalInputDate>
-                    <DataInput title="Data limite para a finalização" />
+                    <ContainerInputs>
+                        <span>Data limite para a finalização</span>
+                        <DatePicker value={inputDateValue} onChange={handleInputDateChange}/>
+                    </ContainerInputs>
                 </ModalInputDate>
                 
                 <ButtonSaveTask>

@@ -122,11 +122,44 @@ export const ButtonSaveTask = styled.button`
     cursor: pointer;
     border: none; 
     margin: auto;
+    background-color: black;
+    color: #ffffff;
 
     &:hover{
         transition: 0.5s;
-        background-color: black; /* Adapte a cor de fundo do hover conforme necessário */
-        color: #ffffff;
+        background-color: #D6D6D6;
+        color: black;
     }
 `;
 
+
+export const ContainerInputs= styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    span{
+        text-align: center;
+        margin: 10px;
+    }
+`
+
+export const InputForDate = styled.input`
+    height: 30px;
+    width: 75px;
+    color: black;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none;
+
+    appearance: textfield;
+    -moz-appearance: textfield;
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+`;

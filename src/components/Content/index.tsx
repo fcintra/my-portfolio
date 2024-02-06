@@ -5,7 +5,7 @@ export function Content(){
     return (
         <ContentContainer>
             <KanbanColumn>
-                <h2>A Fazer</h2>
+                <h2>Tarefas expirando</h2>
                 <KanbanTask>Tarefa 1</KanbanTask>
                 <KanbanTask>Tarefa 2</KanbanTask>
             </KanbanColumn>
